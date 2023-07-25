@@ -1,0 +1,28 @@
+package com.practise.SA;
+
+class Demo7{
+	int value=0;
+	Demo7(){
+		addValue();
+	}
+	void addValue() {
+		value+=10;
+	}
+	int getValue() {
+		return value;
+	}
+}
+class Deri extends Demo7{
+	Deri(){
+		addValue();
+	}
+	void addValue() {
+		value+=20;
+	}
+}
+public class Demo6 {
+	public static void main(String[] args) {
+		Demo7 d=new Deri();
+	
+	}
+}

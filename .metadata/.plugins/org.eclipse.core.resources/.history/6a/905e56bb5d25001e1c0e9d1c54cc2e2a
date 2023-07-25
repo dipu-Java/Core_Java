@@ -1,0 +1,14 @@
+package com.globallogicOnterviewQuestion;
+
+public class Adc {
+	public static void main(String[] args) {
+		String s1 = "program";
+		String s2 = "PROGRAM";
+		StringBuilder sb1 = new StringBuilder();
+		sb1.append("Pro").append("gram");
+		System.out.println(s1.equals(s2));
+		System.out.println(sb1.toString() == s1);
+		System.out.println(sb1.toString().equals(sb1));
+
+	}
+}

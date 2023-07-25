@@ -1,0 +1,12 @@
+package com.handleCustomeException;
+
+public class Demo3 {
+	private void m1()
+	{
+		System.out.println("erigifeigeirgrg");
+	}
+	public static void main(String[] args) {
+		new Demo3().m1();
+
+	}
+}

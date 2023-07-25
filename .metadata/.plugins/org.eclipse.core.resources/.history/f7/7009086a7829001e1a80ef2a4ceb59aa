@@ -1,0 +1,23 @@
+package com.practise.SA;
+
+public class Anagram {
+
+	public static void main(String[] args) {
+     String s="madam";
+     String s1="mamadh";
+     for(int i=0;i<s.length();i++) {
+    	 if(s.length()!=s1.length()) {
+    		 System.out.println("not a anagram ");
+    	 }
+    	 char c=s.charAt(i);
+    	 if(s1.indexOf(c)!=-1) {
+    		  continue;   		 
+    	 }else {
+    		 System.out.println("not a anagram");
+    		 return;
+    	 }   	 
+     }
+     System.out.println("anagram");
+	}
+
+}

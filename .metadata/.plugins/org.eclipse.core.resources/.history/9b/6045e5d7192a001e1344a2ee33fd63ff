@@ -1,0 +1,27 @@
+package com.practise.SA;
+
+public class MainClass {
+	public static void main(String[] args) {
+    String s="java is easy";
+    String s1="";int i=0;int j=0;int count=0;
+    int len=s.length();
+    char[]c=s.toCharArray();
+    while(j<len) {
+    	while(j<len&&c[j]!=' ') {
+    		j++;
+    	}  	
+    	count++;
+    	if(count!=2) {
+    		s1+=c[j];
+    	}
+    	int k=j-1;
+    	String temp="";
+    	while(k>i&&count==2) {
+    		temp+=c[k];
+    		k--;
+    	}
+    	s1+=temp;
+    }
+    System.out.println(s1);
+	}
+}

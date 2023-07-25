@@ -1,0 +1,9 @@
+package com.practise.SA;
+class Con{
+	Con(){
+		System.out.println("java is good");
+	}
+}
+public class Demo10 {
+static Con c=new Con();
+}

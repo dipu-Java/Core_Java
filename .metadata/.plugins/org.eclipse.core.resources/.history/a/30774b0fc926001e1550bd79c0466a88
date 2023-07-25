@@ -1,0 +1,22 @@
+package com.practise.SA;
+
+public class Demo6 {
+	public static void main(String[] args) {
+		String s="a quick brown fox jumps over the  dog";
+		int len=s.length();
+		if(len<=26) {
+		System.out.println("not a panagram");
+		}
+		else {
+		for(char c='a';c<='z';c++) {
+			if(s.indexOf(c)==-1) {
+				System.out.println("not panagram");
+				break;
+			}else {
+				System.out.println(" a panagram");
+			}
+		}
+	
+	}
+}
+}

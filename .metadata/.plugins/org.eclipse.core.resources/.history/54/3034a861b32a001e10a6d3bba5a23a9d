@@ -1,0 +1,24 @@
+package com.practise.SA;
+
+public class Demo15 {
+public static void main(String[] args) {
+	String s="helloworld";
+	char[]c=s.toCharArray();
+	boolean b=true;
+	int count=49;
+	for(int i=0;i<s.length();i++) {
+		for(int j=i+1;j<s.length();j++) {
+			if(c[i]==c[j]) {
+				count++;
+				c[j]=(char)(count);
+				b=false;
+			}
+		}
+		if(!(b)) {
+			c[i]=49;
+			
+		}
+	}
+	System.out.println(c);
+}
+}

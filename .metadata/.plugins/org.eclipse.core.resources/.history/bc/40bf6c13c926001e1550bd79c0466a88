@@ -1,0 +1,26 @@
+package com.practise.SA;
+
+public class Demo6 {
+	public static void main(String[] args) {
+		String s = "a quick brown fox jumps over the lazy dog";
+		if (isPanagram(s))
+			System.out.println("panagram");
+		else
+			System.out.println("not a panagram");
+	}
+
+	public static boolean isPanagram(String s) {
+		int len = s.length();
+		if (len <= 26) {
+			return false;
+		}
+
+		for (char c = 'a'; c <= 'z'; c++) {
+			if (s.indexOf(c) == -1) {
+				return false;
+			}
+		}
+		return true;
+
+	}
+}

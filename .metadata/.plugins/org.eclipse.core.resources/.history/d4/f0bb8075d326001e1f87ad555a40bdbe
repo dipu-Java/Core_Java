@@ -1,0 +1,24 @@
+package com.practise.SA;
+
+class A {
+	String name;
+
+	public A(String name) {
+		super();
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "A [name=" + name + "]";
+	}
+	public static A getInstance() {
+		return new A("sdjsef");
+	}
+}
+public class Demo5 {
+	public static void main(String[] args) {
+		A a=A.getInstance();
+		System.out.println(a.toString());
+	}
+}

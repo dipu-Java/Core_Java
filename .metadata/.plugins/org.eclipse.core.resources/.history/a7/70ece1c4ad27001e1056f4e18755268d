@@ -1,0 +1,20 @@
+package com.practise.SA;
+
+class A {
+	A() {
+		System.out.println("core");
+	}
+}
+
+class B {
+	B() {
+		System.out.println("java");
+	}
+}
+
+public class Demo10 {
+	public static void main(String[] args) {
+		A a = new A();
+	}
+   B b=new B();
+}

@@ -1,0 +1,18 @@
+package com.String.example;
+
+public class count {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "core java";
+
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) != ' ') {
+				count++;
+			}
+		}
+		System.out.println(count);
+	}
+
+}

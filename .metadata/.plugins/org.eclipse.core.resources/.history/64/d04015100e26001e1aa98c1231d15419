@@ -1,0 +1,28 @@
+package com.practise.SA;
+
+abstract class A {
+	int i = 12;
+	abstract void m2();
+
+	final void m1() {
+		System.out.println("favffv");
+	}
+}
+
+class B extends A {
+
+	void m2() {
+		System.out.println(super.i);
+
+	}
+}
+
+public class Demo5 {
+
+	public static void main(String[] args) {
+		A a = new B();
+		a.m1();
+		a.m2();
+	}
+
+}

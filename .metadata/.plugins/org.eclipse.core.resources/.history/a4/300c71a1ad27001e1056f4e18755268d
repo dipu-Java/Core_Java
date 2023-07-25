@@ -1,0 +1,18 @@
+package com.practise.SA;
+
+ 
+public class Demo9 {
+	void m1(String i) {
+		System.out.println("String i");
+	}
+    void m1(Object o) {
+		System.out.println("Object o...");
+	}
+	public static void main(String[] args) {
+		Demo9 d=new Demo9();
+		d.m1(null);
+		d.m1(null);
+	}
+	
+
+}

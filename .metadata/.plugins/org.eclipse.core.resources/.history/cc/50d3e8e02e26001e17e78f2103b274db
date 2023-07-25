@@ -1,0 +1,23 @@
+package com.practise.SA;
+
+class A {
+	void m1() {
+		System.out.println("ghf");
+	}
+
+}
+
+class B extends A {
+	void m1() {
+		System.out.println("ghklddtl");
+	}
+}
+
+public class Demo5 {
+
+	public static void main(String[] args) {
+		A a = new B();
+		a.m1();
+	}
+
+}

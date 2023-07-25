@@ -1,0 +1,22 @@
+package com.arrays.example;
+
+public class demo4 {
+public static void main(String[] args) {
+	String s="java is easy";
+	String s1="";
+	System.out.println();
+//	h=104,r=114,d=100,a=97
+	char[]c=s.toCharArray();
+	int len=s.length();
+	int j=0;
+	while(len>j) {
+		while(len>j&&c[j]!=' ') {
+			j++;
+		}
+		System.out.print(j);
+			
+	}
+}
+	}
+
+

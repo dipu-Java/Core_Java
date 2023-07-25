@@ -1,0 +1,24 @@
+package com.practise.SA;
+
+public class Pallendrome {
+
+	public static void main(String[] args) {
+		String s = "malayalam";
+		int i = 0;
+		int j = s.length() ;
+		if (ispalendrome(s, i, j)) {
+			System.out.println(s.substring(i, j));
+		}
+	}
+
+	static boolean ispalendrome(String s, int i, int j) {
+		while(i<+j) {
+		if (s.charAt(i) != s.charAt(j))return false; 
+			i++;
+			j--;
+			
+		}
+		return true;
+	}
+
+}

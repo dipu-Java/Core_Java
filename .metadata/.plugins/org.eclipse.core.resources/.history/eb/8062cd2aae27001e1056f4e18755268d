@@ -1,0 +1,28 @@
+package com.practise.SA;
+
+class A {
+	static
+	{
+	System.out.println("static block");	
+	}
+	A() {
+		System.out.println("core");
+	}
+}
+
+class B {
+	B() {
+		System.out.println("java");
+	}
+}
+
+public class Demo10 {
+	static
+	{
+	System.out.println("static block");	
+	}
+//	public static void main(String[] args) {
+//		A a = new A();
+//	}
+// static B b=new B();
+}

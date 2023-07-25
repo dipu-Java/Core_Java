@@ -1,0 +1,31 @@
+package com.practise.SA;
+public class MainClass {
+	public static void main(String[] args) {
+		String s = "java is easy";
+		String s1 = "";
+		int i = 0;
+		String a = "";String a1 = "";int j = 0;int count = 0;int a2=0;
+		int len = s.length();
+		char[] c = s.toCharArray();
+		while (j < len) {
+			while (j < len && c[j] != ' ') {
+				j++;
+			}
+			a2=j-1;
+			count++;
+			if (count == 2) {
+				int k = j - 1;
+				if (k >= i) 
+					a1 += c[k];
+					k--;				
+			} 
+			else {
+				a += c[a2] ;
+			}
+			s1 += a+" ";
+			j = j + 1;
+			i = j;
+		}
+		System.out.println(s1);
+	}
+}

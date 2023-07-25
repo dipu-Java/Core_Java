@@ -1,0 +1,10 @@
+package com.practise.SA;
+
+public class Smallest_Biggest_pallendtrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.practise.SA;
+
+public class Count_Character {
+	public static void main(String[] args) {
+		String s = "java is easy";
+		int count = 0;
+		int i = 0;
+		String temp = "";
+		int len = s.length();
+		char[] c = s.toCharArray();
+		while (len > i) {
+			count = 0;
+			temp = "";
+			while (len > i && c[i] != ' ') {
+				temp += c[i];
+				i++;
+//				count++;
+			}
+			count++;
+			System.out.println(temp + " " + count);
+			i = i + 1;
+		}
+	}
+}

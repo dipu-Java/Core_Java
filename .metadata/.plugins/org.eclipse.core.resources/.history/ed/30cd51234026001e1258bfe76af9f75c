@@ -1,0 +1,22 @@
+package com.practise.SA;
+interface A{
+	void m1();
+	default void m2() {	
+		System.out.println("core java..");
+	}
+	static void m3() {		
+	}
+}
+class B implements A{
+	@Override
+	public void m1() {		
+	}	
+}
+public class Demo5 {
+
+	public static void main(String[] args) {
+		A a=new B();
+		a.m2();
+	}
+
+}

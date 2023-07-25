@@ -1,0 +1,25 @@
+package com.practise.SA;
+
+public class Demo16 {
+public static void main(String[] args) {
+	String str="HelloWorld";
+	str=str.toLowerCase();
+	char []arr=str.toCharArray();
+	for(int i=0;i<arr.length-1;i++) {
+		int count=48;
+		if(arr[i]>='a' && arr[i]<='z') {
+			for(int j=i+1;j<arr.length;j++) {
+				if(arr[j]>='a' && arr[j]<='z') {
+					if(arr[i]==arr[j]) {
+						count++;
+						arr[j]=(char)(count);
+					}
+				}
+			}
+			if(count>1)arr[i]='1';
+		}
+	}
+	String s =new String (arr);
+	System.out.println(s);
+}
+}

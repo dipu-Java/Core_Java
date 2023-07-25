@@ -1,0 +1,14 @@
+
+public class a {
+   final void m1(int i) {
+    	
+    }
+final void m1(int j,int i) {
+    	
+    }
+    
+	public static void main(String[] args) {
+		
+	}
+
+}

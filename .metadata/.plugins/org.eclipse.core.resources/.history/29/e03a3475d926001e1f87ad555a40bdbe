@@ -1,0 +1,31 @@
+package com.practise.SA;
+
+class A {
+	String name;
+
+	public A(String name) {
+		super();
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "A [name=" + name + "]";
+	}
+	public static A getInstance() {
+		return new A("java");		
+	}
+	public boolean equals(Object o) {
+//		A a=(A)o;
+		return this.name==a.name;
+		
+	}
+}
+public class Demo5 {
+	public static void main(String[] args) {
+		A a2=A.getInstance();
+		A a1=A.getInstance();
+		System.out.println(a2.equals(a1));
+		System.out.println(a1.toString());
+	}
+}

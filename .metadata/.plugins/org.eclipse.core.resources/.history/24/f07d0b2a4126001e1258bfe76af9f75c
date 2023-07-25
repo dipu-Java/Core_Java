@@ -1,0 +1,23 @@
+package com.practise.SA;
+class Demo{
+	int i;
+//	int j;
+	Demo(int i){
+		this.i=i;
+//		this.j=j;
+	}
+}
+public class Demo6 {
+public static void main(String[] args) {
+//	String s="dipu";
+//	String s1="dipu";
+//	System.out.println(s.equals(s1));
+//	int i=10;
+//	int j=10;
+//	System.out.println(i==j);
+	Demo d=new Demo(10);
+	Demo d1=new Demo(10);
+	System.out.println(d.equals(d1));
+	System.out.println(d==d1);
+}
+}

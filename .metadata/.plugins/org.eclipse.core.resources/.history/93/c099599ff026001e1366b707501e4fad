@@ -1,0 +1,35 @@
+package com.practise.SA;
+class Address {
+	String hno="123";
+	String state="india";
+//	public Address(String hno, String state) {
+//		this.hno = hno;
+//		this.state = state;
+//	}
+}
+class Emp {
+	String name;
+	int id;
+	Address ads;
+	Emp(String name, int id,Address ads) {
+		this.name = name;
+		this.id = id;
+		this.ads=ads;
+	}
+	public  Emp getInstance() {
+		return new Emp("java", 12,ads);
+	}
+	public Emp setName(String name, int id) {
+		return new Emp(name, id,ads);
+	}
+	public String toString() {
+		return "Emp [name=" + name + ", id=" + id + ", ads=" + ads + "]";
+	}
+}
+public class Demo5 {
+	public static void main(String[] args) {
+//		Address ads=new Address();
+   Emp e=new Emp("rashmi",12,ads);
+   
+	}
+}
